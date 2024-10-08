@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <!--  Bootstrap  -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+</head>
+
+<body>
+
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand" href="#">Ejercicios JavaScript</a>
+        </nav>
+
+    </header>
+
+    <main>
+        <section class="container my-5">
+            <h1 class="text-center mb-5">Ejercicios JavaScript</h1>
+
+            <!-- Ejercicio Join -->
+            <article class="card mb-3">
+                <header class="card-header">Ejercicio Join</header>
+                <div class="card-body">
+                    <p id="exercicio1-resultado">Resultado:</p>
+                    <button class="btn btn-primary" onclick="printOutString()"> Ejecutar Ejercicio</button>
+                </div>
+            </article>
+
+            <!-- ejer Double -->
+            <article class="card mb-3">
+                <header class="card-header">Ejercicio Double Array Values</header>
+                <div class="card-body">
+                    <p id="exercicio2-resultado">Resultado: </p>
+                    <button class="btn btn-primary" onclick="doubleArrayValues([1, 2, 4, 5])">Ejecutar
+                        Ejercicio</button>
+                </div>
+            </article>
+
+            <!-- reduce -->
+            <article class="card mb-3">
+                <header class="card-header">Exercise 3: Sum and Product of an Array</header>
+                <div class="card-body">
+                    <p id="exercise3-result">Result: </p>
+                    <button class="btn btn-primary" onclick="sumAndProduct([1, 2, 3, 4])">Ejecutar</button>
+                </div>
+            </article>
+
+            <!-- ejer filter -->
+            <article class="card mb-3">
+                <header class="card-header">Exercise 4: Common Courses</header>
+                <div class="card-body">
+                    <p id="exercise4-result">Result: </p>
+                    <button class="btn btn-primary" onclick="findCommonCourses()">Ejecutar</button>
+                </div>
+            </article>
+            <!-- Array -->
+            <article class="card mb-3">
+                <header class="card-header"> Ejercicio Array </header>
+                <div class="card-body">
+                    <p id="people-array">People: </p>
+                    <button class="btn btn-primary mb-3" onclick="showPeople()">Show All People</button>
+
+                    <button class="btn btn-danger mb-3" onclick="removeDani()">Remover Dani</button>
+                    <button class="btn btn-warning mb-3" onclick="removeJuan()">Remover Juan</button>
+                    <button class="btn btn-info mb-3" onclick="moveLuisToFront()">Mover Luis al frente</button>
+                    <button class="btn btn-success mb-3" onclick="addName('TuNombre')">Lizbeth</button>
+                    <button class="btn btn-secondary mb-3" onclick="logMariaThenBreak()"> 'Maria' rompe el
+                        Loop</button>
+                    <button class="btn btn-dark mb-3" onclick="findMariaIndex()">'Maria' Index</button>
+
+                    <p id="result">Resultado: </p>
+                </div>
+            </article>
+            <!-- ejercicio 6 -->
+
+            <article class="card mb-3">
+                <header class="card-header"> Ejercicio 6</header>
+                <div class="card-body">
+                    <label for="arrayInput" class="form-label">Introduzca números separados por comas (por ejemplo,
+                        3,6,12,5,100,1):</label>
+                    <input type="text" id="arrayInput" class="form-control" placeholder="Enter numbers">
+                    <button class="btn btn-primary mb-3" onclick="sortArray()">Ejecutar</button>
+                    <p id="resultado" class="font-weight-bold">Ordenar: </p>
+                    
+                </div>
+            </article>
+
+
+        </section>
+    </main>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <!-- script js -->
+    <script src="./join.js"></script>
+    <script src="./map.js"></script>
+    <script src="./reduce.js"></script>
+    <script src="./filterIncludes.js"></script>
+    <script src="./ejer5.js"></script>
+    <script src="./ejer6.js"></script>
+</body>
+
+</html>
